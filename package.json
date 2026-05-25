@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.2.2",
+  "engines": {
+    "node": ">=24.16.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "check:pm": "node -e \"if (!process.env.npm_execpath || !process.env.npm_execpath.includes('pnpm')) { console.error('ERROR: usa pnpm, no npm.'); process.exit(1); }\"",
+    "audit:security": "pnpm audit --audit-level moderate && pnpm audit signatures",
+    "audit:sbom": "pnpm sbom --format cyclonedx > reports/sbom/sbom.cyclonedx.json",
+    "audit:licenses": "pnpm licenses list --json > reports/licenses/licenses.json",
+    "audit:outdated": "pnpm outdated",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate"
+  },
+  "name": "ga7-aa5-ev01-ev02-api-caso",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "bcrypt": "6.0.0",
+    "cors": "2.8.6",
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "jsonwebtoken": "9.0.3",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.14",
+    "prisma": "6.19.3"
+  }
+}

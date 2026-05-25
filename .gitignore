@@ -1,0 +1,18 @@
+node_modules
+.pnpm-store
+dist
+build
+coverage
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+reports/**/*.tmp
+
+/src/generated/prisma
+
+# Prisma SQLite local
+prisma/*.db
+prisma/*.db-journal

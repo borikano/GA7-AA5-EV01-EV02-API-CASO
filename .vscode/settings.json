@@ -1,0 +1,9 @@
+{
+  "npm.packageManager": "pnpm",
+  "npm.scriptRunner": "pnpm",
+  "npm.autoDetect": "off",
+  "npm.enableScriptExplorer": false,
+  "npm.scriptCodeLens.enable": false,
+  "editor.formatOnSave": true,
+  "files.eol": "\r\n"
+}

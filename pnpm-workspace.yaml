@@ -1,0 +1,17 @@
+strictPeerDependencies: true
+auditLevel: moderate
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+blockExoticSubdeps: true
+engineStrict: true
+strictDepBuilds: true
+verifyDepsBeforeRun: error
+
+packages:
+  - "."
+
+allowBuilds:
+  '@prisma/client': true
+  '@prisma/engines': true
+  bcrypt: true
+  prisma: true
