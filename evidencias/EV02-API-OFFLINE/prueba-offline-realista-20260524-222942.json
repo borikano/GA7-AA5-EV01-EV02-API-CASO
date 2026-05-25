@@ -1,0 +1,112 @@
+[
+  {
+    "prueba": "GET /",
+    "esperado": "API activa",
+    "resultado": {
+      "ok": true,
+      "message": "API caso GA7-AA5-EV01-EV02 activa",
+      "descripcion": "Servicio web independiente para registro e inicio de sesion.",
+      "evidencias": [
+        "GA7-220501096-AA5-EV01 - Diseño y Desarrollo de servicios web - caso",
+        "GA7-220501096-AA5-EV02 - API"
+      ],
+      "endpoints": {
+        "raiz": "GET /",
+        "health": "GET /api/health",
+        "register": "POST /api/auth/register",
+        "login": "POST /api/auth/login",
+        "profile": "GET /api/auth/profile"
+      }
+    }
+  },
+  {
+    "prueba": "GET /api/health",
+    "esperado": "Health OK",
+    "resultado": {
+      "ok": true,
+      "message": "API caso EV01/EV02 activa",
+      "evidencias": [
+        "GA7-220501096-AA5-EV01 - Diseño y Desarrollo de servicios web - caso",
+        "GA7-220501096-AA5-EV02 - API"
+      ],
+      "timestamp": "2026-05-25T03:29:42.261Z"
+    }
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Mariana Gómez Rojas",
+    "usuario": "mariana_gomez_rojas_3861",
+    "email": "mariana_gomez_rojas.3861@icloud.com",
+    "dominio": "icloud.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Santiago Herrera Pérez",
+    "usuario": "santiago_herrera_perez_6390",
+    "email": "santiago_herrera_perez.6390@icloud.com",
+    "dominio": "icloud.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Valentina Torres Medina",
+    "usuario": "valentina_torres_medina_3649",
+    "email": "valentina_torres_medina.3649@hotmail.com",
+    "dominio": "hotmail.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Camilo Andrés Navarro Ruiz",
+    "usuario": "camilo_navarro_ruiz_2578",
+    "email": "camilo_navarro_ruiz.2578@icloud.com",
+    "dominio": "icloud.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Laura Sofía Ramírez Castro",
+    "usuario": "laura_ramirez_castro_9773",
+    "email": "laura_ramirez_castro.9773@hotmail.com",
+    "dominio": "hotmail.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Flujo completo usuario realista",
+    "nombre": "Daniel Esteban Muñoz Vargas",
+    "usuario": "daniel_munoz_vargas_8031",
+    "email": "daniel_munoz_vargas.8031@gmail.com",
+    "dominio": "gmail.com",
+    "registro": "Usuario registrado correctamente",
+    "login": "Autenticacion satisfactoria",
+    "perfil": "Perfil consultado correctamente",
+    "tokenRecibido": true
+  },
+  {
+    "prueba": "Login incorrecto",
+    "usuario": "daniel_munoz_vargas_8031",
+    "esperado": "Error en la autenticacion",
+    "resultado": "\r\n{\r\n  \"ok\": false,\r\n  \"message\": \"Error en la autenticacion\"\r\n}"
+  },
+  {
+    "prueba": "Perfil sin token",
+    "esperado": "Token no enviado",
+    "resultado": "\r\n{\r\n  \"ok\": false,\r\n  \"message\": \"Token no enviado\"\r\n}"
+  }
+]

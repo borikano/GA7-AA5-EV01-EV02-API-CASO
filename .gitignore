@@ -16,3 +16,7 @@ reports/**/*.tmp
 # Prisma SQLite local
 prisma/*.db
 prisma/*.db-journal
+prisma/*.db
+prisma/*.db-journal
+prisma/*.db
+prisma/*.db-journal
