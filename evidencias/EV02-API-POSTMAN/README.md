@@ -1,6 +1,6 @@
 # Evidencias Postman - EV02 API
 
-En esta carpeta se deben guardar los pantallazos de las pruebas realizadas en Postman.
+En esta carpeta se guardan los pantallazos de las pruebas realizadas en Postman.
 
 ## Capturas requeridas
 
@@ -12,9 +12,7 @@ En esta carpeta se deben guardar los pantallazos de las pruebas realizadas en Po
 6. 06-login-incorrecto.png
 7. 07-perfil-sin-token.png
 
-## Nota
-
-Estas capturas corresponden a la evidencia:
+## Evidencia relacionada
 
 GA7-220501096-AA5-EV02 - API
 

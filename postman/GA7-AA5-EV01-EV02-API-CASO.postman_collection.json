@@ -71,8 +71,8 @@
             "exec": [
               "const suffix = Date.now().toString().slice(-8);",
               "pm.collectionVariables.set('nombre_registro', 'Mariana Gomez Rojas');",
-              "pm.collectionVariables.set('usuario_registro', `mariana_gomez_${suffix}`);",
-              "pm.collectionVariables.set('email_registro', `mariana.gomez.${suffix}@gmail.com`);",
+              "pm.collectionVariables.set('usuario_registro', 'mariana_gomez_' + suffix);",
+              "pm.collectionVariables.set('email_registro', 'mariana.gomez.' + suffix + '@gmail.com');",
               "pm.collectionVariables.set('password_registro', 'Clave123*');"
             ]
           }
