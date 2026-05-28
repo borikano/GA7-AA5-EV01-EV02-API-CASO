@@ -1,8 +1,14 @@
 # Evidencias Postman - EV02 API
 
-En esta carpeta se guardan los pantallazos de las pruebas realizadas en Postman.
+Esta carpeta contiene los pantallazos de las pruebas realizadas en Postman para la evidencia:
 
-## Capturas requeridas
+GA7-220501096-AA5-EV02 - API
+
+La API probada corresponde al servicio construido en:
+
+GA7-220501096-AA5-EV01 - Diseño y Desarrollo de servicios web - caso
+
+## Capturas incluidas
 
 1. 01-ruta-raiz.png
 2. 02-health.png
@@ -12,10 +18,24 @@ En esta carpeta se guardan los pantallazos de las pruebas realizadas en Postman.
 6. 06-login-incorrecto.png
 7. 07-perfil-sin-token.png
 
-## Evidencia relacionada
+## Endpoints probados
 
-GA7-220501096-AA5-EV02 - API
+| Método | Endpoint | Resultado esperado |
+|---|---|---|
+| GET | / | API activa |
+| GET | /api/health | API activa |
+| POST | /api/auth/register | Usuario registrado correctamente |
+| POST | /api/auth/login | Autenticacion satisfactoria |
+| GET | /api/auth/profile | Perfil consultado correctamente |
+| POST | /api/auth/login | Error en la autenticacion |
+| GET | /api/auth/profile | Token no enviado |
 
-La API probada corresponde al servicio construido para:
+## Colección usada
 
-GA7-220501096-AA5-EV01 - Diseño y Desarrollo de servicios web - caso
+La colección utilizada para las pruebas está en:
+
+postman/GA7-AA5-EV01-EV02-API-CASO.postman_collection.json
+
+## Observación
+
+Estas capturas son parte de la evidencia formal de testing con Postman. El video de demostración se realiza al final usando estos mismos endpoints.
